@@ -1,0 +1,380 @@
+{% extends 'home/base.html' %}
+{% load static %}
+{% block title %}Home{% endblock title %}
+{% block main-content %}
+
+<section id="hero" class="hero d-flex align-items-center"> 	
+	<div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center">
+          <h1 data-aos="fade-up">Live The KenLifeStyle With Divya Electronics</h1>
+          <div data-aos="fade-up" data-aos-delay="600">
+            <div class="text-center text-lg-start">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
+          <img src="{% static 'home/assets/img/Presentation2.jpg' %}" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+</section>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .1} 
+  to {opacity: 11}
+}
+
+@keyframes fade {
+  from {opacity: .1} 
+  to {opacity: 11}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+<body>
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  
+  <img src="{% static 'home/assets/img/kitchen6.jpg' %}" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="{% static 'home/assets/img/mixer.jpg' %}" style="width:100%">
+
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="{% static 'home/assets/img/oxy fryer1.jpg' %}" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="{% static 'home/assets/img/sandwitch.jpg' %}" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="{% static 'home/assets/img/processor.jpg' %}" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="{% static 'home/assets/img/blender.jpg' %}" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="{% static 'home/assets/img/cooker.jpg' %}" style="width:100%">
+ 
+</div>
+
+<div class="mySlides fade">
+ 
+  <img src="{% static 'home/assets/img/juicer.jpg' %}" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="{% static 'home/assets/img/processor.jpg' %}" style="width:100%">
+
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="{% static 'home/assets/img/cooking.jpg' %}" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="{% static 'home/assets/img/iron1.jpg' %}" style="width:100%">
+  
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i > dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+</script>
+</body>
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+<style>
+body { text-align:center;}
+</style>
+ <video width="1280" controls >
+   <source src="{% static 'home/assets/videos/Live the Ken Lifestyle with Kenstar.MP4' %}" type="Video/MP4">
+ </video>
+<br>
+<br>
+<br>
+<br>
+<br>
+</body>
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+<style>
+.owl-carousel .item {
+ border: 0px solid white;  
+ font-size: 24px;
+ text-align: center;
+ margin-top: 20px;
+ background-color: white;
+ border-color: white;
+}
+
+.owl-next{
+ float:right;
+}
+.owl-prev{
+ float:left;
+}
+.owl-prev span{
+ font-size: 24px;
+ font-weight: bold;
+}
+.owl-next span{
+ font-size: 24px;
+ font-weight: bold;
+}
+</style>
+
+
+
+
+<!-- 1st Product Slider -->
+<div class="m-3">
+ <h2>Mixers Grinders</h2>
+ <!-- Slider 1 -->
+ <div class="owl-carousel" id="slider1">
+ {% for m in mixergrinders %} 
+  <a href="{% url 'product-detail' m.id %}" class="btn"><div class="item"><img src="{{m.product_image.url}}" alt="" height="200px"><span class="fw-bold">{{m.title}}</span><br><span class="fs-5">Rs. {{m.selling_price}}</span></div></a>
+  {% endfor %}
+ </div>
+</div>
+<!-- End 1st Product Slider -->
+
+<br>
+<br>
+<br>
+<br>
+
+<!-- 2nd Product Slider -->
+<div class="mx-3">
+ <h2>Dry Irons</h2>
+ <!-- Slider 2 -->
+ <div class="owl-carousel" id="slider2">
+ {% for di in dryirons %} 
+  <a href="{% url 'product-detail' di.id %}" class="btn"><div class="item"><img src="{{di.product_image.url}}" alt="" height="200px"><span class="fw-bold">{{di.title}}</span><br><span class="fs-5">Rs. {{di.selling_price}}</span></div></a>
+  {% endfor %}
+ </div>
+</div>
+<!-- End 2nd Product Slider -->
+
+<br>
+<br>
+<br>
+<br>
+
+
+<!-- 3rd Product Slider -->
+<div class="mx-3">
+ <h2>Sandwitch Maker</h2>
+ <!-- Slider 3 -->
+ <div class="owl-carousel" id="slider3">
+ {% for sm in sandwitchmaker %} 
+  <a href="{% url 'product-detail' sm.id %}" class="btn"><div class="item"><img src="{{sm.product_image.url}}" alt="" height="200px"><span class="fw-bold">{{sm.title}}</span><br><span class="fs-5">Rs. {{sm.selling_price}}</span></div></a>
+  {% endfor %} 
+ </div>
+</div>
+<!-- End 3rd Product Slider -->
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+<!-- 4th Product Slider -->
+<div class="mx-3">
+ <h2>Electric Kettel</h2>
+ <!-- Slider 4 -->
+ <div class="owl-carousel" id="slider4">
+ {% for ek in electrickettel %} 
+  <a href="{% url 'product-detail' ek.id %}" class="btn"><div class="item"><img src="{{ek.product_image.url}}" alt="" height="200px"><span class="fw-bold">{{ek.title}}</span><br><span class="fs-5">Rs. {{ek.selling_price}}</span></div></a>
+  {% endfor %} 
+ </div>
+</div>
+<!-- End 4th Product Slider -->
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+<!-- 5th Product Slider -->
+<div class="mx-3">
+ <h2>Food Processor</h2>
+ <!-- Slider 5 -->
+ <div class="owl-carousel" id="slider5">
+ {% for fp in foodprocessor %} 
+  <a href="{% url 'product-detail' fp.id %}" class="btn"><div class="item"><img src="{{fp.product_image.url}}" alt="" height="200px"><span class="fw-bold">{{fp.title}}</span><br><span class="fs-5">Rs. {{fp.selling_price}}</span></div></a>
+  {% endfor %}  
+ </div>
+</div>
+<!-- End 5th Product Slider -->
+
+<br>
+<br>
+<br>
+<br>
+
+
+<!-- 6th Product Slider -->
+<div class="mx-3">
+ <h2>Hand Blender</h2>
+ <!-- Slider 6 -->
+ <div class="owl-carousel" id="slider6">
+ {% for hb in handblender %} 
+  <a href="{% url 'product-detail' hb.id %}" class="btn"><div class="item"><img src="{{hb.product_image.url}}" alt="" height="200px"><span class="fw-bold">{{hb.title}}</span><br><span class="fs-5">Rs. {{hb.selling_price}}</span></div></a>
+  {% endfor %}   
+ </div>
+</div>
+<!-- End 6th Product Slider -->
+
+
+<br>
+<br>
+<br>
+<br>
+
+<!-- 7th Product Slider -->
+<div class="mx-3">
+ <h2>Juicer</h2>
+ <!-- Slider 7 -->
+ <div class="owl-carousel" id="slider7">
+ {% for j in juicers %} 
+  <a href="{% url 'product-detail' j.id %}" class="btn"><div class="item"><img src="{{j.product_image.url}}" alt="" height="200px"><span class="fw-bold">{{j.title}}</span><br><span class="fs-5">Rs. {{j.selling_price}}</span></div></a>
+  {% endfor %} 
+</div>
+<!-- End 7th Product Slider -->
+
+
+
+{% endblock main-content %}  
+
+
+
+
+
+
+   
